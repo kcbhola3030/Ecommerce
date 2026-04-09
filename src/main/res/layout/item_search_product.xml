@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="8dp"
+    android:layout_marginEnd="8dp"
+    android:layout_marginTop="6dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <ImageView
+            android:id="@+id/ivProductImage"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:scaleType="centerCrop"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginStart="8dp">
+
+            <TextView
+                android:id="@+id/tvProductName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="#E8643A"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/tvProductDesc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:textSize="12sp"
+                android:maxLines="3"
+                android:ellipsize="end"/>
+
+            <TextView
+                android:id="@+id/tvProductPrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:textColor="#2196F3"
+                android:textSize="14sp"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

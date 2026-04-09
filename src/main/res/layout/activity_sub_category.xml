@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#2196F3"
+        app:titleTextColor="#FFFFFF"/>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        app:tabTextColor="#888888"
+        app:tabSelectedTextColor="#E87722"
+        app:tabIndicatorColor="#E87722"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvProducts"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="8dp"
+        android:clipToPadding="false"/>
+
+</LinearLayout>

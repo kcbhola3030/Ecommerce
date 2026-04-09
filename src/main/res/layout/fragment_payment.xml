@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#FFFFFF">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Payment Option"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="#111111"
+        android:layout_marginBottom="16dp"/>
+
+    <RadioGroup
+        android:id="@+id/radioGroupPayment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/rb_cod"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:text="Cash On Delivery"
+            android:textSize="14sp"
+            android:padding="12dp"
+            android:button="@null"
+            android:drawableEnd="@android:drawable/btn_radio"
+            android:background="@drawable/input_background"
+            android:layout_marginBottom="8dp"/>
+
+        <RadioButton
+            android:id="@+id/rb_internet"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:text="Internet Banking"
+            android:textSize="14sp"
+            android:padding="12dp"
+            android:button="@null"
+            android:drawableEnd="@android:drawable/btn_radio"
+            android:background="@drawable/input_background"
+            android:layout_marginBottom="8dp"/>
+
+        <RadioButton
+            android:id="@+id/rb_card"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:text="Debit Card / Credit Card"
+            android:textSize="14sp"
+            android:padding="12dp"
+            android:button="@null"
+            android:drawableEnd="@android:drawable/btn_radio"
+            android:background="@drawable/input_background"
+            android:layout_marginBottom="8dp"/>
+
+        <RadioButton
+            android:id="@+id/rb_paypal"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:text="Pay Pal"
+            android:textSize="14sp"
+            android:padding="12dp"
+            android:button="@null"
+            android:drawableEnd="@android:drawable/btn_radio"
+            android:background="@drawable/input_background"
+            android:layout_marginBottom="8dp"/>
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:text="NEXT"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#2196F3"/>
+
+</LinearLayout>
